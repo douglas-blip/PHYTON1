@@ -1,0 +1,55 @@
+def maximo(a, b):
+    if a > b:
+        return a
+    elif b > a:
+        return b
+    else:
+        return a  # ou return b, pois são iguais
+
+def main():
+    # Leitura dos números
+    num1 = int(input("Digite o primeiro número: "))
+    num2 = int(input("Digite o segundo número: "))
+    
+    # Chama a função maximo e imprime o resultado
+    resultado = maximo(num1, num2)
+    print(f"O maior número é: {resultado}")
+
+# Chama a função main
+main()
+
+def positivo_nulo_negativo(n):
+    if n > 0:
+        print("Valor Positivo")
+    elif n == 0:
+        print("Valor nulo")
+    else:
+        print("Valor negativo")
+
+def main():
+    # Leitura do número
+    num = float(input("Digite um número: "))
+    
+    # Chama a função positivo_nulo_negativo
+    positivo_nulo_negativo(num)
+
+# Chama a função main
+main()
+
+def valor_absoluto(n):
+    if n < 0:
+        return -n
+    else:
+        return n
+
+def main():
+    # Leitura do número
+    num = float(input("Digite um número: "))
+    
+    # Chama a função valor_absoluto e imprime o resultado
+    resultado = valor_absoluto(num)
+    print(f"O valor absoluto é: {resultado}")
+
+# Chama a função main
+main()
+
